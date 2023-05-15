@@ -101,6 +101,8 @@ class ModelTrainer:
             ]
             best_model = models[best_model_name]
 
+            logging.info(f'Best Model selected is {best_model}')
+
             if best_model_score<0.6:
                 raise CustomException("No best model found")
             logging.info(f"Best found model on both training and testing dataset")
@@ -113,6 +115,7 @@ class ModelTrainer:
             predicted=best_model.predict(X_test)
 
             r2_square = r2_score(y_test, predicted)
+            logging.info(f'Selected Model R2_Score is :{r2_square}')
             return r2_square
             
 

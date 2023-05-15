@@ -60,6 +60,6 @@ if __name__=="__main__":
 
 
     model_trainer = ModelTrainer()
-    model_trainer.initiate_model_trainer(train_arr,test_arr)
+    print(model_trainer.initiate_model_trainer(train_arr,test_arr))
    
     

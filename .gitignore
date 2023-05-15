@@ -27,8 +27,8 @@ share/python-wheels/
 MANIFEST
 
 #Environment
-.artifacts
-.catboost_info
+.artifacts/
+.catboost_info/
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
